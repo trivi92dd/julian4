@@ -1,0 +1,97 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+h2, h3, h4 , h5 , h6 , h7 ,  p {
+  font-family: "Times New Roman", serif;
+}
+
+.container {
+  text-align: center; 
+  min-height: 100%; /* Cambiado a min-height para que la página se ajuste al contenido */
+}
+
+h1 {
+  margin-top: 50px; 
+  background-color: green;
+  color: white;
+  padding: 20px;
+}
+
+nav {
+  background-color: blue;
+  color: white;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.seccion {
+  padding: 20px;
+  margin: 20px auto;
+  width: 1200px; /* Cambiado a max-width para que las secciones no se expandan demasiado en pantallas anchas */
+  background-color: rgba(159, 213, 209, 1); 
+  border: 1px solid #ccc;
+  display: flex; /* Utilizar flexbox */
+  flex-direction: column; /* Distribuir los elementos en columna */
+  align-items: center; /* Centrar elementos horizontalmente */
+}
+
+.seccion > * {
+  margin-bottom: 10px; /* Añadido espacio entre elementos */
+}
+
+.imagen-especifica {
+  width: 350px; 
+  height: 350px; 
+  margin-bottom: 20px; /* Añadido margen inferior */
+  margin-top: 50px;
+}
+
+.watermark {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('pencil.jpg');
+  background-size: cover; /* Esto ajustará la imagen para que cubra todo el contenedor */
+  background-position: center; /* Esto centrará la imagen */
+  pointer-events: none; 
+  z-index: -1; 
+}
+
+.seccion p {
+  text-align: justify;
+}
+
+seccion li {
+  text-align: left; /* Alinea el texto de los elementos de la lista a la izquierda */
+}
+
+.titulo-centralizado {
+  font-size: 36px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+
+
